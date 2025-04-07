@@ -2,21 +2,28 @@
     <feed xmlns="http://www.w3.org/2005/Atom">
       <title>https://opdev1004.com Atom Feed</title>
       <link href="https://opdev1004.com" />
-      <updated>2025-04-07T12:40:52.440Z</updated>
+      <updated>2025-04-07T20:25:19.385Z</updated>
       <id>https://opdev1004.com/feed</id>
       
       <entry>
         <title>easy static website builder</title>
         <link href="https://opdev1004.com/contents/web-development/1-easy%20static%20website%20builder" />
         <id>https://opdev1004.com/contents/web-development/1-easy%20static%20website%20builder</id>
-        <updated>2025-04-07T12:40:52.440Z</updated>
+        <updated>2025-04-07T20:25:19.385Z</updated>
       </entry>
     
       <entry>
         <title>my computer wakes up from sleep mode</title>
         <link href="https://opdev1004.com/contents/windows/1-my%20computer%20wakes%20up%20from%20sleep%20mode" />
         <id>https://opdev1004.com/contents/windows/1-my%20computer%20wakes%20up%20from%20sleep%20mode</id>
-        <updated>2025-04-07T12:40:52.440Z</updated>
+        <updated>2025-04-07T20:25:19.385Z</updated>
+      </entry>
+    
+      <entry>
+        <title>open vscodium</title>
+        <link href="https://opdev1004.com/contents/windows/2-open%20vscodium" />
+        <id>https://opdev1004.com/contents/windows/2-open%20vscodium</id>
+        <updated>2025-04-07T20:25:19.385Z</updated>
       </entry>
     
     </feed>
