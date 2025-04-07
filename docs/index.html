@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="/scripts/main.js"></script>
+<link rel="stylesheet" href="/styles/style.css" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="/images/op_logo.png" />
+<meta property="og:image" content="/images/opdev1004_og_image.png" />
+<meta property="og:site_name" content="opdev1004 website" />
+  <meta name="description"
+    content="I do web, game, web browser extension and desktop software development. Additionally web server management and website management." />
+  <meta property="og:title" content="opdev1004 Home" />
+  <meta property="og:description"
+    content="I do web, game, web browser extension and desktop software development. Additionally web server management and website management." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://opdev1004.com/" />
+  <title>opdev1004 Home</title>
+</head>
+
+<body>
+  <div class="top">
+    <aside class="sidebar" id="sidebar">
+    <div class="sidebar-icon-content">
+        <a href="https://github.com/opdev1004" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.npmjs.com/~opdev1004" target="_blank"><ion-icon name="logo-npm"></ion-icon></a>
+        <a href="https://www.nuget.org/profiles/opdev1004" target="_blank">
+            <ion-icon name="logo-microsoft"></ion-icon></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/opdev1004/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+    </div>
+    <div class="sidebar-text-content">
+        <h4>Main</h4>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="https://github.com/sponsors/opdev1004" target="_blank">Support my project</a>
+                </li>
+            </ul>
+        </nav>
+        <h4>Blog</h4>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/contents-list/web-development/web-development-1">Web Development</a>
+                </li>
+                <li>
+                    <a href="/contents-list/windows/windows-1">Windows</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar-empty-zone" id="sidebar-empty-zone" onclick="main.runContentTab()"></div>
+</aside>
+    <div class="top-right">
+      <header>
+    <div class="menu-tab tab" id="menu-tab" onclick="main.switchTab('sidebar')">
+        <ion-icon name="menu-outline"></ion-icon>
+        <span>Menu</span>
+    </div>
+    <div class="content-tab tab active" id="content-tab" onclick="main.switchTab('content')">
+        <ion-icon name="code-outline"></ion-icon>
+        <span>opdev1004<span>
+    </div>
+    <div class="tab2 tab" id="tab2" onclick="main.switchTab('tab2-content')">
+        <ion-icon name="information-outline"></ion-icon>
+        <span>About</spans>
+    </div>
+</header>
+      <main>
+        <div class="content-container">
+          <div class="content" id="content">
+            <script type="text/javascript" src="/scripts/game.js" defer></script>
+<canvas id="gameCanvas"></canvas>
+<div>
+    <p>
+        🎮 Controls:
+    </p>
+    <ul>
+        <li>Move: Tap or drag anywhere on the screen</li>
+        <li>Shoot: Auto-fire from movement</li>
+        <li>Start / Restart: Click the Start or Restart button</li>
+    </ul>
+</div>
+            <article ><h1>opdev1004 Home Page 👨‍💻</h1>
+<p>I do web, game, web browser extension and desktop software development. Additionally web server management and website management.</p>
+<p>Please feel free to contact me!</p>
+<ul>
+<li>NZ Mobile: (+64) 0221755117</li>
+<li>email: <a href="mailto:opdev1004@gmail.com">opdev1004@gmail.com</a></li>
+</ul>
+<h2>Github Stats</h2>
+<img src="https://github-readme-stats.vercel.app/api?username=opdev1004&show_icons=true&theme=tokyonight" />
+<h2>Most Used Languages</h2>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=opdev1004&layout=compact&langs_count=12&theme=tokyonight" />
+<h2>My projects ✨</h2>
+<h3>Rino.js</h3>
+<p>Built a lightweight and efficient website compiler that is designed for creating fast and scalable static website. Rino.js emphasizes developer productivity, offering modular architecture and smooth integration with modern JavaScript tools. Built with a focus on performance and maintainability</p>
+<ul>
+<li><a href="https://rinojs.org/">Official Rino website</a></li>
+<li><a href="https://github.com/rinojs/rinojs">Rino.js Github Repository</a></li>
+<li><a href="https://github.com/rinojs/">Rino.js Organization Page</a></li>
+</ul>
+<h3>LifeRegen - Bannerlord Mod</h3>
+<p>A game mod that enhances combat strategy and gameplay balance by introducing life regeneration mechanics for main player in Mount &amp; Blade II: Bannerlord. LifeRegen enriches the player experience by offering dynamic health recovery options, creating more engaging battles and strategic depth.</p>
+<ul>
+<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3190267630">Mod Web Page</a></li>
+<li><a href="https://github.com/opdev1004/liferegen">LifeRegen Github Repository</a></li>
+</ul>
+<h3>Tot</h3>
+<p>A high-performance, custom database library built to optimize data handling and streamline operations for software. Tot.js focuses on efficient asynchronous I/O operations for JavaScript environments, while TotCS brings similar functionality to C# projects, supporting multi-threaded processing and robust data management.</p>
+<ul>
+<li><a href="https://github.com/opdev1004/totjs">Javascript Github Repository</a></li>
+<li><a href="https://github.com/opdev1004/totcs">C# Github Repository</a></li>
+</ul>
+<h3>B-graph and B-graph DB</h3>
+<p>A powerful solution for efficient data indexing and in-memory storage. B-graph offers a robust indexing algorithm optimized for complex database operations, while B-graph DB delivers high-speed, memory-based data handling with seamless data structure serialization, enhancing the performance of software.</p>
+<ul>
+<li><a href="https://github.com/opdev1004/bgraph">B-Graph Github Repository</a></li>
+<li><a href="https://github.com/opdev1004/bgraphdb">B-Graph DB Github Repository</a></li>
+</ul>
+<h3>Grid Map CS</h3>
+<p>A versatile library designed for efficient grid mapping and shortest pathfinding solutions. Grid Map CS supports advanced pathfinding algorithms and asynchronous multi-threaded operations, making it ideal for use in simulations, games, and data-intensive applications.</p>
+<ul>
+<li><a href="https://github.com/opdev1004/gridmapcs">Grid Map CS Github Repository</a></li>
+</ul>
+<h3>mdblogger</h3>
+<p>Designed to streamline content creation on Blogger by enabling users to write posts using markdown syntax and seamlessly convert it to HTML. This
+lightweight, user-friendly extension focuses on enhancing productivity and simplifying formatting tasks for bloggers</p>
+<ul>
+<li><a href="https://github.com/opdev1004/mdblogger">mdblogger Github Repository</a></li>
+<li><a href="https://chromewebstore.google.com/detail/mdblogger/mmdaohoahbhbjmlodlonnkdchdbhknmp">mdblogger Chrome Web Store</a></li>
+</ul>
+<h3>Color Picking Wizard</h3>
+<p>A versatile and intuitive color-picking tool designed to enhance web development workflows. This extension allows users to quickly select, copy, and manage colors from any webpage.</p>
+<ul>
+<li><a href="https://chromewebstore.google.com/detail/color-picking-wizard/gbdnmhjdgeblodpkmkgennfbkbhlgkao">Color Picking Wizard Chrome Web Store</a></li>
+</ul>
+<h3>OP Blogger Theme</h3>
+<p>The OP Blogger Theme offers a modern, responsive design focused on readability and seamless usability across all devices. Backed by over a decade of expertise in HTML, CSS, and JavaScript, it blends aesthetics, functionality, and performance to elevate a blogger’s blogging experience.</p>
+<ul>
+<li><a href="https://github.com/opdev1004/op-blogger-themes">OP Blogger Theme Github Repository</a></li>
+</ul>
+</article>
+          </div>
+          <div class="tab2-content tab2-content--invisible" id="tab2-content">
+            <article>
+    Still working on this feature of website! 👨‍💻
+</article>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <footer>
+    (c) <span id="year">2025</span> opdev1004. All rights reserved.
+</footer>
+</body>
+
+</html>

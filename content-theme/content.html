@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <component @path="/head"></component>
+  <meta name="description" content="{{content.description}}" />
+  <meta property="og:title" content="{{ content.title }}" />
+  <meta property="og:description" content="{{ content.description }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://opdev1004.com{{ content.urlPath }}" />
+  <title>{{ content.title }}</title>
+</head>
+
+<body>
+  <div class="top">
+    <component @path="/sidebar"></component>
+    <div class="top-right">
+      <component @path="/header"></component>
+      <main>
+        <div class="content-container">
+          <div class="content" id="content">
+            <article>
+              {{ content.body }}
+            </article>
+          </div>
+          <div class="tab2-content tab2-content--invisible" id="tab2-content">
+            <component @path="/tab2-content"></component>
+          </div>
+          <hr />
+          <h3>Content Navigation:</h3>
+          <nav class="content-navigation">
+            <script @type="js" type="text/javascript">
+              const args = process.argv;
+              const contentDataString = args[args.length - 1];
+              const contentData = JSON.parse(contentDataString);
+
+              if (Array.isArray(contentData.nearby))
+              {
+                const nearby = contentData.nearby;
+                const currentIndex = nearby.findIndex(post => post.link === contentData.urlPath);
+                let start = 0;
+                let end = nearby.length;
+
+                if (currentIndex !== -1)
+                {
+                  const maxItems = 5;
+                  const before = Math.min(2, currentIndex);
+                  const after = Math.min(2, nearby.length - currentIndex - 1);
+                  let total = 1 + before + after;
+
+                  if (total < maxItems)
+                  {
+                    const extra = maxItems - total;
+                    const moreBefore = Math.min(extra, currentIndex - before);
+                    const moreAfter = Math.min(extra - moreBefore, nearby.length - currentIndex - 1 - after);
+
+                    start = currentIndex - (before + moreBefore);
+                    end = currentIndex + 1 + after + moreAfter;
+                  }
+                  else
+                  {
+                    start = currentIndex - before;
+                    end = currentIndex + 1 + after;
+                  }
+
+                  const sliced = nearby.slice(start, end);
+                  console.log(`<ul>`);
+                  sliced.forEach(post =>
+                  {
+                    if (post.link === contentData.urlPath)
+                    {
+                      console.log(`<li><span>${post.title}</span></li>`);
+                    }
+                    else
+                    {
+                      console.log(`<li><a href="${post.link}">${post.title}</a></li>`);
+                    }
+                  });
+                  console.log(`</ul>`);
+                }
+              }
+            </script>
+          </nav>
+        </div>
+      </main>
+    </div>
+  </div>
+  <component @path="/footer"></component>
+</body>
+
+</html>
