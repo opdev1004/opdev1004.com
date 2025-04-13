@@ -19,20 +19,19 @@
                 </li>
             </ul>
         </nav>
-        <h4>Blog</h4>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/contents-list/web-development/web-development-1">Web Development</a>
-                </li>
-                <li>
-                    <a href="/contents-list/windows/windows-1">Windows</a>
-                </li>
-                <li>
-                    <a href="/contents-list/cyber-security/cyber-security-1">Cyber Security</a>
-                </li>
-            </ul>
-        </nav>
+        <script @type="js" type="text/javascript">
+            const args = JSON.parse(process.argv[1]);
+            const categoryLinks = args.categoryLinks;
+            if (categoryLinks && Object.keys(categoryLinks).length > 0)
+            {
+                console.log("<h4>Blog</h4><nav><ul>");
+                for (const [category, link] of Object.entries(categoryLinks))
+                {
+                    console.log(`<li><a href="${link}">${category.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</a></li>`);
+                }
+                console.log("</ul></nav>");
+            }
+        </script>
     </div>
     <div class="sidebar-empty-zone" id="sidebar-empty-zone" onclick="main.runContentTab()"></div>
 </aside>
