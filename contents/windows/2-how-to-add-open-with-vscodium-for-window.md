@@ -1,10 +1,12 @@
 <!--
 {
   "title": "How to add \"Open with VSCodium\" for Windows",
-  "published": "February 06, 2025",
-  "description": "If you're a developer using VSCodium on Windows, you might want a convenient way to open directories directly from File Explorer. This guide explains how to add \"Open with VSCodium\" to the context menu by modifying the Windows registry..."
+  "time": "2025-02-06T00:02:00.000Z",
+  "description": "How to add \"Open with VSCodium\" for Windows If you're a developer using VSCodium on Windows, you might want a convenient way to open directories directly from File Explorer. This guide explains how to add \"Open with VSCodium\" to the context menu by modifying the Windows registry. We will cover..."
 }
 -->
+
+![open_vscodium.webp](/images/uploads/open_vscodium.webp)
 # How to add "Open with VSCodium" for Windows
 If you're a developer using VSCodium on Windows, you might want a convenient way to open directories directly from File Explorer. This guide explains how to add "Open with VSCodium" to the context menu by modifying the Windows registry.
 

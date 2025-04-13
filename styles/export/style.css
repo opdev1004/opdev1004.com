@@ -198,6 +198,13 @@ footer {
     line-height: normal;
 }
 
+.published-time {
+    color: #D7AB4C;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
 @media all and (min-width: 0px) and (max-width: 1280px) {
     .menu-tab {
         display: flex;

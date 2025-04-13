@@ -10,11 +10,11 @@
     "generate-sitemap": "node generate.js && node sitemap.js",
     "sitemap": "node sitemap.js",
     "feed": "node feed.js",
-    "image": "node image-compression.js",
+    "backoffice": "node backoffice.js",
     "prepare": "husky"
   },
   "dependencies": {
-    "rinojs": "^2.12.0"
+    "rinojs": "^2.13.2"
   },
   "devDependencies": {
     "husky": "^9.1.7",

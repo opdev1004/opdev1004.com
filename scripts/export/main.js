@@ -56,6 +56,22 @@ function runContentTab ()
 document.addEventListener('DOMContentLoaded', () =>
 {
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const timeElem = document.getElementById('published-time');
+
+    if (timeElem)
+    {
+        const rawTime = timeElem.getAttribute('data-raw-time');
+        const date = new Date(rawTime);
+
+        const formatted = date.toLocaleDateString(undefined, {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+        });
+
+        timeElem.textContent = `Published: ${formatted}`;
+    }
 });
 
 export

@@ -1,8 +1,8 @@
 <!--
 {
   "title": "Easy static website builder with HTML, CSS and Typescript or Javascript",
-  "published": "December 13, 2024",
-  "description": "Rino.js is your go-to web framework for building efficient static websites with HTML, CSS and Typescript/Javascript. Designed for developers of all levels, it simplifies web development by combining the power of standard web technologies with streamlined preprocessing tools..."
+  "time": "2024-12-11T21:00:00.000Z",
+  "description": "Fast learning, preprocessing, intuitive website builder Rino.js is your goto web framework for building efficient static websites with HTML, CSS and Typescript/Javascript. Designed for developers of all levels, it simplifies web development by combining the power of standard web technologies with streamlined preprocessing tools. Requirement Node.js HTML CSS Javascript /..."
 }
 -->
 

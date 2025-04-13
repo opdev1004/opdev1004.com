@@ -1,8 +1,8 @@
 <!--
 {
   "title": "My computer wakes up from sleep mode, windows",
-  "published": "November 08, 2024",
-  "description": "My computer has been waken up sometimes from sleep mode. And I was always thinking maybe there's USB connection problem. However I found a real reason why it does that..."
+  "time": "2024-11-08T19:00:00.000Z",
+  "description": "My computer wakes up from sleep mode, windows My computer has been waken up sometimes from sleep mode. And I was always thinking maybe there's USB connection problem. However I found a real reason why it does that. If I powercfg/lastwake from cmd, I can check what caused it to..."
 }
 -->
 

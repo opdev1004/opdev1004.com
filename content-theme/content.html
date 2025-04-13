@@ -22,6 +22,9 @@
         <div class="content-container">
           <div class="content" id="content">
             <article>
+              <p class="published-time" id="published-time" data-raw-time="{{ content.time }}">
+                Published: {{ content.time }}
+              </p>
               {{ content.body }}
             </article>
           </div>
