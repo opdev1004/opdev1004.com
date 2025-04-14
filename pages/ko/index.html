@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <component @path="/ko/head"></component>
+  <meta name="description" content="웹, 게임, 웹 브라우저 확장 프로그램, 데스크탑 소프트웨어 개발을 합니다. 또한 웹 서버 관리 및 웹사이트 관리도 수행하고 있습니다." />
+  <meta property="og:title" content="opdev1004 홈" />
+  <meta property="og:description"
+    content="웹, 게임, 웹 브라우저 확장 프로그램, 데스크탑 소프트웨어 개발을 합니다. 또한 웹 서버 관리 및 웹사이트 관리도 수행하고 있습니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://opdev1004.com/ko" />
+  <title>opdev1004 홈</title>
+</head>
+
+<body>
+  <div class="top">
+    <component @path="/ko/sidebar"></component>
+    <div class="top-right">
+      <component @path="/ko/header"></component>
+      <main>
+        <div class="content-container">
+          <div class="content" id="content">
+            <component @path="/ko/game"></component>
+            <script @path="/ko/index" @type="md" @tag="article"></script>
+          </div>
+          <div class="tab2-content tab2-content--invisible" id="tab2-content">
+            <component @path="/ko/tab2-content"></component>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <component @path="/ko/footer"></component>
+</body>
+
+</html>

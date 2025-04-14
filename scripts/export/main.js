@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () =>
             day: 'numeric',
         });
 
-        timeElem.textContent = `Published: ${formatted}`;
+        timeElem.textContent = `${formatted}`;
     }
 });
 
