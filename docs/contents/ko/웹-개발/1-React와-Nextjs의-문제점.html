@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-  <script
+  <head>
+    <script
   type="module"
   src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"
 ></script>
@@ -26,19 +25,32 @@
   crossorigin="anonymous"
 ></script>
 
-  <meta name="description" content="React와 Next.js의 문제점 프론트엔드 개발을 할 때 많은 사람들이 React와 Next.js를 기본 선택처럼 사용합니다. 그렇지만 리액트와 넥스트는 무겁고 복잡합니다. 이번 글에서는 리액트와 넥스트가 가진 문제점들을 정리해보겠습니다. 리액트/넥스트 문제점들: 1. 플러그인/모듈 호환성 문제와 ERESOLVE 오류 리액트 생태계는 수많은 플러그인과 모듈들로 구성되어 있습니다. 하지만 이러한 모듈들은 서로 다른 버전의 리액트 또는 다른..." />
-  <meta property="og:title" content="React와 Next.js의 문제점" />
-  <meta property="og:description" content="React와 Next.js의 문제점 프론트엔드 개발을 할 때 많은 사람들이 React와 Next.js를 기본 선택처럼 사용합니다. 그렇지만 리액트와 넥스트는 무겁고 복잡합니다. 이번 글에서는 리액트와 넥스트가 가진 문제점들을 정리해보겠습니다. 리액트/넥스트 문제점들: 1. 플러그인/모듈 호환성 문제와 ERESOLVE 오류 리액트 생태계는 수많은 플러그인과 모듈들로 구성되어 있습니다. 하지만 이러한 모듈들은 서로 다른 버전의 리액트 또는 다른..." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://opdev1004.com/contents/ko/웹-개발/1-React와-Nextjs의-문제점" />
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss-ko.xml">
-  <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom-ko.xml">
-  <title>React와 Next.js의 문제점</title>
-</head>
+    <meta name="description" content="React와 Next.js의 문제점 프론트엔드 개발을 할 때 많은 사람들이 React와 Next.js를 기본 선택처럼 사용합니다. 그렇지만 리액트와 넥스트는 무겁고 복잡합니다. 이번 글에서는 리액트와 넥스트가 가진 문제점들을 정리해보겠습니다. 리액트/넥스트 문제점들: 1. 플러그인/모듈 호환성 문제와 ERESOLVE 오류 리액트 생태계는 수많은 플러그인과 모듈들로 구성되어 있습니다. 하지만 이러한 모듈들은 서로 다른 버전의 리액트 또는 다른..." />
+    <meta property="og:title" content="React와 Next.js의 문제점" />
+    <meta property="og:description" content="React와 Next.js의 문제점 프론트엔드 개발을 할 때 많은 사람들이 React와 Next.js를 기본 선택처럼 사용합니다. 그렇지만 리액트와 넥스트는 무겁고 복잡합니다. 이번 글에서는 리액트와 넥스트가 가진 문제점들을 정리해보겠습니다. 리액트/넥스트 문제점들: 1. 플러그인/모듈 호환성 문제와 ERESOLVE 오류 리액트 생태계는 수많은 플러그인과 모듈들로 구성되어 있습니다. 하지만 이러한 모듈들은 서로 다른 버전의 리액트 또는 다른..." />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://opdev1004.com/contents/ko/웹-개발/1-React와-Nextjs의-문제점"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="/rss-ko.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Atom"
+      href="/atom-ko.xml"
+    />
+    <title>React와 Next.js의 문제점</title>
+  </head>
 
-<body>
-  <div class="top">
-    <aside class="sidebar" id="sidebar">
+  <body>
+    <div class="top">
+      <aside class="sidebar" id="sidebar">
     <div class="sidebar-icon-content">
         <a href="https://github.com/opdev1004" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
         <a href="https://www.npmjs.com/~opdev1004" target="_blank"><ion-icon name="logo-npm"></ion-icon></a>
@@ -67,8 +79,8 @@
     </div>
     <div class="sidebar-empty-zone" id="sidebar-empty-zone" onclick="main.runContentTab()"></div>
 </aside>
-    <div class="top-right">
-      <header>
+      <div class="top-right">
+        <header>
     <div class="menu-tab tab" id="menu-tab" onclick="main.switchTab('sidebar')">
         <ion-icon name="menu-outline"></ion-icon>
         <span>메뉴</span>
@@ -82,17 +94,17 @@
         <span>언어</spans>
     </div>
 </header>
-      <main>
-        <div class="content-container">
-          <div class="content" id="content">
-            <article>
-              <p class="published-time">
-                발행 시간:
-                <span id="published-time" data-raw-time="2025-04-14T22:23:00.000Z">
-                  2025-04-14T22:23:00.000Z
-                </span>
-              </p>
-              <h1>React와 Next.js의 문제점</h1>
+        <main>
+          <div class="content-container">
+            <div class="content" id="content">
+              <article>
+                <p class="published-time">
+                  발행 시간:
+                  <span id="published-time" data-raw-time="2025-04-14T22:23:00.000Z">
+                    2025-04-14T22:23:00.000Z
+                  </span>
+                </p>
+                <h1>React와 Next.js의 문제점</h1>
 <p>프론트엔드 개발을 할 때 많은 사람들이 React와 Next.js를 기본 선택처럼 사용합니다. 그렇지만 리액트와 넥스트는 무겁고 복잡합니다. 이번 글에서는 리액트와 넥스트가 가진 문제점들을 정리해보겠습니다.</p>
 <h2>리액트/넥스트 문제점들:</h2>
 <h3>1. 플러그인/모듈 호환성 문제와 ERESOLVE 오류</h3>
@@ -115,31 +127,31 @@
 <h2>결론</h2>
 <p>리액트와 넥스트는 강력한 도구이지만, 저는 추천하지 않습니다. 쓸 수 밖에 없는 경우도 있겠지만, 오랜 시간과 노력으로 기술적 부채를 만들어 내는 기술이니 잘 생각하고 결정해야 합니다.</p>
 
-            </article>
-            <hr />
-            <h3>콘텐츠 네비게이션:</h3>
-            <nav class="content-navigation">
-              <ul>
+              </article>
+              <hr />
+              <h3>콘텐츠 네비게이션:</h3>
+              <nav class="content-navigation">
+                <ul>
 <li><span>React와 Next.js의 문제점</span></li>
 </ul>
-            </nav>
-          </div>
-          <div class="tab2-content tab2-content--invisible" id="tab2-content">
-            <div>
-    <div type="text/markdown"><ul>
+              </nav>
+            </div>
+            <div class="tab2-content tab2-content--invisible" id="tab2-content">
+              <div>
+  <div type="text/markdown"><ul>
 <li><a href="/">English</a></li>
 <li><a href="/ko/">한국어</a></li>
 </ul>
 </div>
 </div>
+
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
-  </div>
-  <footer>
+    <footer>
     (c) <span id="year">2025</span> opdev1004. All rights reserved.
 </footer>
-</body>
-
+  </body>
 </html>

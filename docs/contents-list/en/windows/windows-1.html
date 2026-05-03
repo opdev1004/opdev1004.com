@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-  <script
+  <head>
+    <script
   type="module"
   src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"
 ></script>
@@ -26,17 +25,23 @@
   crossorigin="anonymous"
 ></script>
 
-  <meta name="description" content="This is a page for navigating contents." />
-  <meta property="og:title" content="Content List" />
-  <meta property="og:description" content="This is a page for navigating contents." />
-  <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="This is a page for navigating contents."
+    />
+    <meta property="og:title" content="Content List" />
+    <meta
+      property="og:description"
+      content="This is a page for navigating contents."
+    />
+    <meta property="og:type" content="website" />
 
-  <title>Content List</title>
-</head>
+    <title>Content List</title>
+  </head>
 
-<body>
-  <div class="top">
-    <aside class="sidebar" id="sidebar">
+  <body>
+    <div class="top">
+      <aside class="sidebar" id="sidebar">
     <div class="sidebar-icon-content">
         <a href="https://github.com/opdev1004" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
         <a href="https://www.npmjs.com/~opdev1004" target="_blank"><ion-icon name="logo-npm"></ion-icon></a>
@@ -65,8 +70,8 @@
     </div>
     <div class="sidebar-empty-zone" id="sidebar-empty-zone" onclick="main.runContentTab()"></div>
 </aside>
-    <div class="top-right">
-      <header>
+      <div class="top-right">
+        <header>
     <div class="menu-tab tab" id="menu-tab" onclick="main.switchTab('sidebar')">
         <ion-icon name="menu-outline"></ion-icon>
         <span>Menu</span>
@@ -80,36 +85,36 @@
         <span>Language</spans>
     </div>
 </header>
-      <main>
-        <div class="content-container">
-          <div class="content" id="content">
-            <article>
-              <ol>
-                <li><a href="/contents/en/windows/2-how-to-add-open-with-vscodium-for-window">How to add "Open with VSCodium" for Windows</a></li>
+        <main>
+          <div class="content-container">
+            <div class="content" id="content">
+              <article>
+                <ol>
+                  <li><a href="/contents/en/windows/2-how-to-add-open-with-vscodium-for-window">How to add "Open with VSCodium" for Windows</a></li>
 <li><a href="/contents/en/windows/1-my-computer-wakes-up-from-sleep-mode-win">My computer wakes up from sleep mode, windows</a></li>
-              </ol>
-            </article>
-          </div>
-          <div class="tab2-content tab2-content--invisible" id="tab2-content">
-            <div>
-    <div type="text/markdown"><ul>
+                </ol>
+              </article>
+            </div>
+            <div class="tab2-content tab2-content--invisible" id="tab2-content">
+              <div>
+  <div type="text/markdown"><ul>
 <li><a href="/">English</a></li>
 <li><a href="/ko/">한국어</a></li>
 </ul>
 </div>
 </div>
+
+            </div>
+            <hr />
+            <nav class="content-list-navigation">
+              
+            </nav>
           </div>
-          <hr />
-          <nav class="content-list-navigation">
-            
-          </nav>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
-  </div>
-  <footer>
+    <footer>
     (c) <span id="year">2025</span> opdev1004. All rights reserved.
 </footer>
-</body>
-
+  </body>
 </html>
